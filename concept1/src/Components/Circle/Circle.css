@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "bebasNeue";
+  src: url("../../Fonts/BebasNeue-Regular.otf");
+}
+
+.font {
+  width: 500px;
+  height: 500px;
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bounce > .circle {
+  width: 250px;
+  height: 250px;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: relative;
+  background-image: url("../../assets/font-homepage.png");
+  animation: drawCircle 2.7s ease-out forwards;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@keyframes drawCircle {
+  0% {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    transform: rotate(1080deg);
+  }
+}
+
+.bounce {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.hovered:hover {
+  animation: scale 0.8s ease-in-out backwards;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+.hovered {
+  transform: scale(1.3);
+}
+
+.notHovered {
+  animation: unScale 0.8s ease-in-out backwards;
+}
+
+@keyframes unScale {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.circle-text {
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  width: 260px;
+  height: 50px;
+  margin-top: 8rem;
+  font-family: "bebasNeue";
+  font-size: 25px;
+  font-weight: 1100;
+  letter-spacing: 2px;
+  color: transparent;
+  animation: colorTransition 3s ease-in forwards;
+}
+
+@keyframes colorTransition {
+  0% {
+    opacity: 0;
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
