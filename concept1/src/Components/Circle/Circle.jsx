@@ -2,18 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./Circle.css";
 
-function Circle() {
-    
-  const [isHovered, setIsHovered] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+function Circle({isVisible, setIsVisible}) {
 
   const handleButtonClick = () => {
     setIsVisible(false);
@@ -25,11 +14,7 @@ function Circle() {
         className={`font ${isVisible ? "" : "fade-out"}`}
         onClick={handleButtonClick}
       >
-        <div
-          className={`bounce ${isHovered ? "hovered" : "notHovered"} `}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
+        <div className={`bounce`}>
           <div className="circle"></div>
         </div>
         <div className="circle-text">Appuyez sur le cercle pour entrer</div>

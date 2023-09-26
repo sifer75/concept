@@ -30,16 +30,6 @@
     transform: rotate(1080deg);
   }
 }
-
-.bounce {
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.hovered:hover {
-  animation: scale 0.8s ease-in-out backwards;
-}
-
 @keyframes scale {
   0% {
     transform: scale(1);
@@ -49,12 +39,16 @@
   }
 }
 
-.hovered {
-  transform: scale(1.3);
+.bounce {
+  background-color: transparent;
+  border-color: transparent;
+  transform: scale(1);
+  transition: all 0.8s;
 }
 
-.notHovered {
-  animation: unScale 0.8s ease-in-out backwards;
+.bounce:hover {
+  transform: scale(1.3);
+  transition: all 0.8s;
 }
 
 @keyframes unScale {
@@ -92,7 +86,17 @@
   }
 }
 
+@keyframes TransitionTest {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
 .fade-out {
   opacity: 0;
-  transition: opacity 2s ease;
+  animation: TransitionTest 2s ease;
 }
