@@ -50,7 +50,7 @@
   width: 25px;
   height: 25px;
   border-radius: 25px;
-  display: none;
+  /* display: none; */
 }
 
 .color1 {
@@ -59,14 +59,17 @@
 
 .color2 {
   background-color: rgb(140, 139, 193);
+  /* margin-left: -38px; */
 }
 
 .color3 {
   background-color: rgb(137, 188, 142);
+  /* margin-left: -38px; */
 }
 
 .color4 {
   background-color: rgb(196, 142, 182);
+  /* margin-left: -38px; */
 }
 
 .font-color:hover .color1 {
@@ -80,6 +83,77 @@
   margin-left: 1rem;
 }
 
-.glowUp {
+.glowUp:hover {
   border: 3px solid rgb(255, 255, 255);
+}
+
+
+.test-color{
+  position: relative;
+  background-color: rgb(197, 196, 196);
+  opacity: 0.5;
+  border: 2px solid white;
+  border-radius: 25px;
+  width: fit-content;
+  height: 50px;
+  position: fixed;
+  box-sizing: border-box;
+  top: 90%;
+  left: 5%;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+@keyframes test {
+  0% {
+    margin-left: -39px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+
+
+@keyframes test2 {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -39px;
+  }
+}
+
+.test-color>div:not(:first-child){
+  margin-left: -39px;
+  animation: 1s test2 backwards ease-in-out;
+}
+
+
+.test-color:hover > div:not(:first-child){
+  animation: 1s test backwards ease-in-out;
+  margin-left: 0px;
+}
+
+.test-color > div{
+  position: relative;
+}
+
+.color-show > [type="radio"]{
+  position:absolute;
+  top:0;
+  left:0;
+  padding: 0;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  opacity:0;
+}
+
+.first{
+  z-index: 100;
 }

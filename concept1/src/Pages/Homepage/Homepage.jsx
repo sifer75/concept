@@ -10,7 +10,7 @@ function Homepage() {
     <>
       <div className={"container"} style={{ backgroundColor: selectedColor }}>
         <Circle></Circle>
-        <ChangeFontColor setSelectedColor={setSelectedColor} />
+        <ChangeFontColor setSelectedColor={setSelectedColor} selectedColor={selectedColor} />
       </div>
     </>
   );
