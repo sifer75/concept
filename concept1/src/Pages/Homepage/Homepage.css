@@ -3,17 +3,24 @@
   src: url("../../Fonts/BebasNeue-Regular.otf");
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
 .container {
-    width: 100vw; 
-    height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  width: 100vw;
+  height: 300vh;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-family: "bebasNeue";
+}

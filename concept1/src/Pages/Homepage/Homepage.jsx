@@ -3,6 +3,7 @@ import Circle from "../../Components/Circle/Circle";
 import ChangeFontColor from "../../Components/ChangeFontColor/ChangeFontColor";
 import "./Homepage.css";
 import Home from "../home/home";
+import Menu from "../../Components/Menu/Menu";
 
 function Homepage() {
   const [selectedColor, setSelectedColor] = useState("rgb(194, 154, 138)");
