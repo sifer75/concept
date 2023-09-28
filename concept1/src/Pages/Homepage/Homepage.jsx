@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Circle from "../../Components/Circle/Circle";
 import ChangeFontColor from "../../Components/ChangeFontColor/ChangeFontColor";
 import "./Homepage.css";
@@ -18,6 +18,6 @@ function Homepage() {
       </div>
     </>
   );
-}
+};
 
 export default Homepage;

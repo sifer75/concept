@@ -8,6 +8,7 @@ const colors = [
   "rgb(137, 188, 142)",
   "rgb(196, 142, 182)",
   "rgb(100, 123, 12",
+  "rgb(220, 143, 10",
 ];
 
 function ChangeFontColor({ setSelectedColor, selectedColor }) {

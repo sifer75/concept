@@ -1,48 +1,20 @@
-.font-color {
+.test-color {
+  position: relative;
   background-color: rgb(197, 196, 196);
   opacity: 0.5;
   border: 2px solid white;
   border-radius: 25px;
-  width: 50px;
-  height: 50px;
+  width: fit-content;
+  height: 49px;
   position: fixed;
   box-sizing: border-box;
   top: 90%;
   left: 5%;
-  overflow: hidden;
   display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
   align-items: center;
-  justify-content: center;
-}
-
-.font-color:hover {
-  animation: templateTransition 0.5s ease-in-out backwards;
-}
-
-@keyframes templateTransition {
-  0% {
-    width: 50px;
-  }
-  100% {
-    width: 200px;
-  }
-}
-
-.opened {
-  width: 200px;
-}
-
-.closed {
-  animation: templateOrigin 0.5s ease-in-out backwards;
-}
-
-@keyframes templateOrigin {
-  0% {
-    width: 200px;
-  }
-  100% {
-    width: 50px;
-  }
+  gap: 10px;
 }
 
 .color-show {
@@ -50,7 +22,6 @@
   width: 25px;
   height: 25px;
   border-radius: 25px;
-  /* display: none; */
 }
 
 .color1 {
@@ -59,53 +30,18 @@
 
 .color2 {
   background-color: rgb(140, 139, 193);
-  /* margin-left: -38px; */
 }
 
 .color3 {
   background-color: rgb(137, 188, 142);
-  /* margin-left: -38px; */
 }
 
 .color4 {
   background-color: rgb(196, 142, 182);
-  /* margin-left: -38px; */
-}
-
-.font-color:hover .color1 {
-  display: inline-block;
-}
-
-.font-color:hover .color2,
-.font-color:hover .color3,
-.font-color:hover .color4 {
-  display: inline-block;
-  margin-left: 1rem;
 }
 
 .glowUp:hover {
-  border: 3px solid rgb(255, 255, 255);
-}
-
-
-.test-color{
-  position: relative;
-  background-color: rgb(197, 196, 196);
-  opacity: 0.5;
-  border: 2px solid white;
-  border-radius: 25px;
-  width: fit-content;
-  height: 50px;
-  position: fixed;
-  box-sizing: border-box;
-  top: 90%;
-  left: 5%;
-  display: flex;
-  padding-left: 10px;
-  padding-right: 10px;
-  align-items: center;
-  gap: 10px;
-  
+  border: 2px solid rgb(255, 255, 255);
 }
 
 @keyframes test {
@@ -117,8 +53,6 @@
   }
 }
 
-
-
 @keyframes test2 {
   0% {
     margin-left: 0px;
@@ -128,32 +62,31 @@
   }
 }
 
-.test-color>div:not(:first-child){
+.test-color > div:not(:first-child) {
   margin-left: -39px;
   animation: 1s test2 backwards ease-in-out;
 }
 
-
-.test-color:hover > div:not(:first-child){
+.test-color:hover > div:not(:first-child) {
   animation: 1s test backwards ease-in-out;
   margin-left: 0px;
 }
 
-.test-color > div{
+.test-color > div {
   position: relative;
 }
 
-.color-show > [type="radio"]{
-  position:absolute;
-  top:0;
-  left:0;
+.color-show > [type="radio"] {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 0;
   margin: 0;
   width: 25px;
   height: 25px;
-  opacity:0;
+  opacity: 0;
 }
 
-.first{
+.first {
   z-index: 100;
 }
