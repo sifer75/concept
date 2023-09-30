@@ -3,31 +3,41 @@
   src: url("../../Fonts/BebasNeue-Regular.otf");
   font-family: "poppins";
   src: url("../../Fonts/Poppins-Medium.ttf");
+  font-family: "impact";
+  src: url("../../Fonts/Impact.ttf");
+  font-family: "kelsi";
+  src: url("../../Fonts/kelsi/Kelsi-fill.otf");
 }
 
-body {
-  background-color: black;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   width: 100vw;
-  height: 400vh;
+  height: 500vh;
   display: flex;
-  margin: 0;
   justify-content: center;
-  padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 li {
   list-style: none;
 }
 
-h1, h2, ul {
-  font-family: "bebasNeue";
-  color: rgb(225, 225, 225);
+h1,
+h2,
+ul {
+  font-family: "impact";
+  color: rgb(40, 40, 40);
+  letter-spacing: 0.43%;
 }
-p, ul > li {
+p,
+ul > li {
   font-family: "poppins";
-  color: white;
+  color: rgb(40, 40, 40);
+  letter-spacing: 0.43%;
+  line-height: 99.5%;
 }

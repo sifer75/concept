@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "kelsi-light";
+    src: url("../../Fonts/kelsi/Kelsi-Regular.otf");
+  }
+
+.transitionText {
+    background-color: rgb(237, 106, 62);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47vw;
+    margin-right: 10px;
+    border-radius: 50px;
+    height: 12vw;
+  transform-origin: 50% 50% 0px;
+}
+  
+  .kelsiStyle {
+    font-family:"kelsi";
+    font-size: 8vw;
+    color: rgb(40, 40, 40);
+  }

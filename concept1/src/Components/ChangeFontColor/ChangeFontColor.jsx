@@ -3,18 +3,20 @@ import { useState } from "react";
 import "./ChangeFontColor.css";
 
 const colors = [
-  "rgb(194, 154, 138)",
+  "rgb(198, 201, 188)",
   "rgb(177, 176, 243)",
   "rgb(137, 188, 142)",
   "rgb(196, 142, 182)",
-  "rgb(100, 123, 12",
-  "rgb(220, 143, 10",
+  "rgb(100, 123, 12)",
+  "rgb(220, 143, 10)",
+  "rgb(30, 123, 10",
 ];
 
 function ChangeFontColor({ setSelectedColor, selectedColor }) {
   const changeColor = (e) => {
     if (e.target.name === "color")
       setSelectedColor(e.target.value);
+      console.log(e.target)
   }
 
   return (
