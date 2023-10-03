@@ -1,0 +1,31 @@
+.container-projets {
+  width: 90vw;
+  height: 30vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5vw;
+}
+
+.pos {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 25vw;
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(187, 187, 188);
+  padding-top: 3vw;
+  font-size: 2vw;
+}
+
+.puissance4 {
+  background-image: url(../../assets/puissance4.png);
+}
+.yugioh {
+  background-image: url(../../assets/yu-gi-oh.png);
+}
+.otium {
+  background-image: url(../../assets/otium.png);
+}

@@ -1,0 +1,91 @@
+.placement {
+  width: 80vw;
+  border-bottom: 2px solid #555555;
+  margin-top: 50px;
+}
+
+.devElement {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: -20px;
+}
+
+.webElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 13vw;
+}
+
+.webElement > p {
+  margin-bottom: 1vw;
+  margin-top: 4vw;
+  font-size: 2vw;
+}
+
+.webElement > div {
+    width: 8vw;
+  height: 8vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.titleOther {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.classroom {
+  margin-top: -2vw;
+}
+
+.javascript {
+  background-image: url(../../assets/javascript-39404.png);
+}
+
+.react {
+  background-image: url(../../assets/react.svg);
+}
+
+.tailwind {
+  background-image: url(../../assets/tailwindcss.svg);
+}
+
+.mongo {
+  background-image: url(../../assets/mongodb.png);
+}
+
+.express {
+  background-image: url(../../assets/expressjs.svg);
+}
+
+.node {
+  background-image: url(../../assets/nodejs.svg);
+}
+
+.netifly {
+  background-image: url(../../assets/netlify.svg);
+}
+
+.render {
+  background-image: url(../../assets/render.png);
+}
+
+.figma {
+  background-image: url(../../assets/figma.svg);
+}
+
+.github {
+  background-image: url(../../assets/github.svg);
+}
+
+.ironhack {
+  background-image: url(../../assets/ironhack.svg);
+}
+
+.openClassrooms {
+  background-image: url(../../assets/openClassrooms.png);
+}

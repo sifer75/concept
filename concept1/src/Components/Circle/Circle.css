@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: center;
   top: 20%;
+  left: 30%;
   position: fixed;
 }
 
@@ -70,7 +71,7 @@
   height: 50px;
   margin-top: 8rem;
   font-family: "bebasNeue";
-  font-size: 25px;
+  font-size: 2em;
   font-weight: 1100;
   letter-spacing: 2px;
   color: transparent;

@@ -3,7 +3,6 @@ import Circle from "../../Components/Circle/Circle";
 import ChangeFontColor from "../../Components/ChangeFontColor/ChangeFontColor";
 import "./Homepage.css";
 import Home from "../home/home";
-import Menu from "../../Components/Menu/Menu";
 
 function Homepage() {
   const [selectedColor, setSelectedColor] = useState("rgb(194, 154, 138)");
@@ -11,7 +10,7 @@ function Homepage() {
 
   return (
     <>
-      <div className={"container"} style={{ backgroundColor: selectedColor }}>
+      <div className={"page container"} style={{ backgroundColor: selectedColor }}>
         <Circle isVisible={isVisible} setIsVisible={setIsVisible}></Circle>
         <ChangeFontColor setSelectedColor={setSelectedColor} selectedColor={selectedColor} />
         {!isVisible && <Home/>}
