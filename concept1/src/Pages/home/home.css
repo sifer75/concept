@@ -5,10 +5,11 @@
 
 .page {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  height: 500vh;
   justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 500vw;
 }
 
 .presentation,
@@ -17,18 +18,18 @@
 .projet,
 .contact {
   display: flex;
-  /* width: 100vw;
-  height: 850px; */
   flex: 1;
-  padding: 20px;
-  overflow: auto;
+  overflow: hidden;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .positionTitle {
-  font-size: 5vw;
+  font-size: 8vw;
+  margin-top: 5vh;
 }
 
 .positionSubTitle {

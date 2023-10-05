@@ -10,10 +10,8 @@
   border-color: transparent;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  top: 20%;
-  left: 30%;
-  position: fixed;
 }
 
 .bounce > .circle {
@@ -64,17 +62,13 @@
 }
 
 .circle-text {
-  position: absolute;
   text-align: center;
-  top: 60%;
   width: 260px;
   height: 50px;
-  margin-top: 8rem;
   font-family: "bebasNeue";
   font-size: 2em;
-  font-weight: 1100;
   letter-spacing: 2px;
-  color: transparent;
+  margin-top: 5vw;
   animation: colorTransition 3s ease-in forwards;
 }
 

@@ -27,8 +27,7 @@ function Home() {
 
   return (
     <>
-      {!start && (
-        <div className="page">
+      {!start && ( <>
           <Menu
             sections={{
               home: homeRef,
@@ -43,7 +42,7 @@ function Home() {
           <Skills skillsRef={skillsRef}></Skills>
           <Experience experienceRef={experienceRef}></Experience>
           <Contact contactRef={contactRef}></Contact>
-        </div>
+          </>
       )}
     </>
   );

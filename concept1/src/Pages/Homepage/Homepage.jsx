@@ -10,13 +10,26 @@ function Homepage() {
 
   return (
     <>
-      <div className={"page container"} style={{ backgroundColor: selectedColor }}>
-        <Circle isVisible={isVisible} setIsVisible={setIsVisible}></Circle>
-        <ChangeFontColor setSelectedColor={setSelectedColor} selectedColor={selectedColor} />
-        {!isVisible && <Home/>}
-      </div>
+      {isVisible && (
+        <div className={"container"} style={{ backgroundColor: selectedColor }}>
+          <Circle isVisible={isVisible} setIsVisible={setIsVisible}></Circle>
+          <ChangeFontColor
+            setSelectedColor={setSelectedColor}
+            selectedColor={selectedColor}
+          />
+        </div>
+      )}
+      {!isVisible && (
+        <div className={"page"} style={{ backgroundColor: selectedColor }}>
+          <Home></Home>
+          <ChangeFontColor
+            setSelectedColor={setSelectedColor}
+            selectedColor={selectedColor}
+          />
+        </div>
+      )}
     </>
   );
-};
+}
 
 export default Homepage;

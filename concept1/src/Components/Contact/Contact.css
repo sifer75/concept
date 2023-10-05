@@ -1,3 +1,32 @@
-.footer {
-    display: flex;
+.contact-container {
+  width: 15vw;
+  height: 11vw;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding-top: 10px;
+  margin-top: 2vw;
+}
+
+.webElement2 {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.webElement2 > a > div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.webElement2 > a > p {
+  font-size: 4vw;
+  display: flex;
+  justify-content: center;
+}
+
+.lien {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
 }

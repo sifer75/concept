@@ -1,25 +1,25 @@
 .placement {
   width: 80vw;
   border-bottom: 2px solid #555555;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 .devElement {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: -20px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  width: 100vw;
 }
 
 .webElement {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 13vw;
 }
 
 .webElement > p {
   margin-bottom: 1vw;
-  margin-top: 4vw;
   font-size: 2vw;
 }
 
@@ -36,10 +36,8 @@
   display: flex;
   justify-content: space-between;
   width: 80vw;
-}
-
-.classroom {
-  margin-top: -2vw;
+  border-bottom: 2px solid #555555;
+  margin-top: 35px;
 }
 
 .javascript {
@@ -88,4 +86,16 @@
 
 .openClassrooms {
   background-image: url(../../assets/openClassrooms.png);
+}
+
+.linkedin {
+  background-image: url(../../assets/linkedin.png);
+}
+
+.email {
+  background-image: url(../../assets/gmail.png);
+}
+
+.cv {
+  background-image: url(../../assets/cv.png);
 }

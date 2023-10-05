@@ -18,8 +18,9 @@
   transition: color 0.3s;
   padding: 10px;
   position: fixed;
-  background-color: black;
+  /* background-color: black; */
   top: 2%;
+  left: 25%;
 }
 
 .menu li {

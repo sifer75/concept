@@ -36,8 +36,10 @@ function Skills({ skillsRef }) {
             <div className="node"></div>
           </div>
         </div>
-        <div className="placement">
+        <div className="titleOther">
           <h2 className="positionSubTitle">Déploiement</h2>
+          <h2 className="positionSubTitle">Autre</h2>
+          <h2 className="positionSubTitle">Certification</h2>
         </div>
         <div className="devElement">
           <div className="webElement">
@@ -48,31 +50,23 @@ function Skills({ skillsRef }) {
             <p>Render</p>
             <div className="render"></div>
           </div>
-        </div>
-        <div className="placement titleOther">
-          <h2 className="positionSubTitle">Autre</h2>
-          <h2 className="positionSubTitle">Certification</h2>
-        </div>
-        <div className="titleOther">
-          <div className="devElement">
-            <div className="webElement">
-              <p>Figma</p>
-              <div className="figma"></div>
-            </div>
-            <div className="webElement">
-              <p>GitHub</p>
-              <div className="github"></div>
-            </div>
+
+          <div className="webElement">
+            <p>Figma</p>
+            <div className="figma"></div>
           </div>
-          <div className="devElement">
-            <div className="webElement">
-              <p>Ironhack</p>
-              <div className="ironhack"></div>
-            </div>
-            <div className="webElement classroom">
-              <p>Open Classrooms</p>
-              <div className="openClassrooms"></div>
-            </div>
+          <div className="webElement">
+            <p>GitHub</p>
+            <div className="github"></div>
+          </div>
+
+          <div className="webElement">
+            <p>Ironhack</p>
+            <div className="ironhack"></div>
+          </div>
+          <div className="webElement">
+            <p>Open Classrooms</p>
+            <div className="openClassrooms"></div>
           </div>
         </div>
       </div>
