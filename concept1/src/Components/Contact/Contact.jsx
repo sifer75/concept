@@ -18,13 +18,12 @@ function Contact({ contactRef }) {
     const mouseX = (e.clientX / window.innerWidth) * 100;
     const mouseY = (e.clientY / window.innerHeight) * 100;
     setIrisPosition({ x: mouseX, y: mouseY });
-    console.log(mouseX, mouseY);
   };
 
   return (
     <>
       <div className="contact" ref={contactRef} onMouseMove={handleMouseMove}>
-        <h1 className="positionTitle">Me Contacter</h1>
+        <h1>Me Contacter</h1>
         <Eyes irisPosition={irisPosition} happy={isHovered}></Eyes>
         <ul className="devElement">
           <li

@@ -1,14 +1,22 @@
+.container-skills {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20vw;
+  align-items: center;
+}
+
 .placement {
-  width: 80vw;
+  width: 100vw;
   border-bottom: 2px solid #555555;
-  margin-top: 35px;
+  display: flex;
+  justify-content: center;
 }
 
 .devElement {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 25px;
-  margin-top: 25px;
   width: 100vw;
 }
 
@@ -19,13 +27,13 @@
 }
 
 .webElement > p {
-  margin-bottom: 1vw;
+  margin-bottom: 2.5vw;
   font-size: 2vw;
 }
 
 .webElement > div {
-    width: 8vw;
-  height: 8vw;
+    width: 13vw;
+  height: 7vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,58 +41,57 @@
 }
 
 .titleOther {
-  display: flex;
-  justify-content: space-between;
-  width: 80vw;
+  width: 100vw;
   border-bottom: 2px solid #555555;
-  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.javascript {
+.Javascript {
   background-image: url(../../assets/javascript-39404.png);
 }
 
-.react {
+.React {
   background-image: url(../../assets/react.svg);
 }
 
-.tailwind {
+.TailwindCSS {
   background-image: url(../../assets/tailwindcss.svg);
 }
 
-.mongo {
+.Mongo {
   background-image: url(../../assets/mongodb.png);
 }
 
-.express {
+.Express {
   background-image: url(../../assets/expressjs.svg);
 }
 
-.node {
+.Node {
   background-image: url(../../assets/nodejs.svg);
 }
 
-.netifly {
+.Netifly {
   background-image: url(../../assets/netlify.svg);
 }
 
-.render {
+.Render {
   background-image: url(../../assets/render.png);
 }
 
-.figma {
+.Figma {
   background-image: url(../../assets/figma.svg);
 }
 
-.github {
+.GitHub {
   background-image: url(../../assets/github.svg);
 }
 
-.ironhack {
+.Ironhack {
   background-image: url(../../assets/ironhack.svg);
 }
 
-.openClassrooms {
+.OpenClassrooms {
   background-image: url(../../assets/openClassrooms.png);
 }
 

@@ -1,3 +1,8 @@
+.projet {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .container-projets {
   width: 90vw;
   height: 30vw;
@@ -20,6 +25,20 @@
   font-size: 2vw;
 }
 
+.button2 {
+  background-color: transparent;
+  border-radius: 50px 50px 50px 50px;
+  height: 2rem;
+  width: 7rem;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border: 2px solid black;
+  text-decoration: none;
+}
+
 .puissance4 {
   background-image: url(../../assets/puissance4.png);
 }
@@ -28,4 +47,81 @@
 }
 .otium {
   background-image: url(../../assets/otium.png);
+}
+
+.bodyPort {
+  margin-left: 7rem;
+  margin-top: 5rem;
+}
+
+.sectionProject {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+
+.image1 {
+  background-image: url(../../assets/puissance4.png);
+  background-repeat: no-repeat;
+  width: 58vh;
+  height: 37vh;
+  margin-right: 5rem;
+}
+
+.image2 {
+  background-image: url(../../assets/yu-gi-oh.png);
+  background-repeat: no-repeat;
+  width: 58vh;
+  height: 37vh;
+  margin-right: 5rem;
+}
+
+.image3 {
+  background-image: url(../../assets/otium.png);
+  background-repeat: no-repeat;
+  width: 58vh;
+  height: 37vh;
+  margin-right: 5rem;
+}
+
+.descImage {
+    width: 31vh;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.linkGit {
+  display: flex;
+  justify-content: space-between;
+  width: 11rem;
+  margin-top: 2rem;
+}
+
+.logoGit {
+  background-image: url(../../assets/github.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.button2 > div {
+    font-size: large;
+}
+
+@media (max-width: 600px) {
+  .bodyPort {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0rem;
+  }
+}
+
+.display {
+  display: none;
 }

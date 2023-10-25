@@ -5,8 +5,7 @@ function About({ aboutRef }) {
   return (
     <>
       <div className="about" ref={aboutRef}>
-        <div className="positionDescription">
-          <h1 className="positionTitle">Salut, moi c'est Fabien.</h1>
+          <h1>Salut, moi c'est Fabien.</h1>
           <p className="description">
             Développeur front end passionné par la création de solutions
             numériques innovantes, je suis spécialisé dans la mise en place de
@@ -19,7 +18,6 @@ function About({ aboutRef }) {
             m'efforce de créer des produits qui sont esthétiquement plaisants et
             faciles à utiliser.
           </p>
-        </div>
         <div className="text-repeat">
           <span className="text">
             LET'S TALK&nbsp;
@@ -38,7 +36,7 @@ function About({ aboutRef }) {
             <span style={{ fontFamily: "kelsi-light" }}>X&nbsp;</span>
           </span>
         </div>
-      </div>
+        </div>
     </>
   );
 }

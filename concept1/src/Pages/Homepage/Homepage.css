@@ -25,6 +25,12 @@ ul {
   color: rgb(40, 40, 40);
   letter-spacing: 0.43%;
 }
+
+h1 {
+  font-size: 7vw;
+  letter-spacing: 0.43%;
+}
+
 p,
 ul > li {
   font-family: "poppins";
